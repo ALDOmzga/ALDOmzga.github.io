@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content=" wid=decive-width, initial-scale=1">
+<body style="background-color: rgb(10, 11, 87);">
+  <center><h1 style="color: rgb(255, 255, 255);">MANUAL HTML</h1></center>
+</div>
+<header>
+  <nav><center>
+  <div style="background-color: rgb(76, 76, 76);">
+    <br>
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/ftxt.html">Formato de texto</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/imagen.html">Imagenes</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/tablas.html">Tablas</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../index.html">HOME</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/listas.html">Listas</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/formularios.html">Formularios</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/media.html">Media</a>&nbsp;&nbsp;
+    <br><br><hr>
+    </div>
+    <div style="color: rgb(255, 255, 255);">
+    <center><h1 style="color: rgb(255, 255, 255);">IMAGENES</h1></center>
+        <h2>¿Cómo ponemos una imagen en una página web?</h2>
+    <p>
+        Para poner una imagen simple en una página web, utilizamos el elemento 
+        &lt;img&gt;. Se trata de un elemento vacío (lo que significa que no contiene texto o etiqueta de cierre)
+        que requiere de por lo menos de un atributo para ser utilizado: src 
+        (a veces denominado por su nombre completo, source).
+        El atributo src contiene una ruta que apunta a la imagen que quieres poner en la página,
+        que puede ser una URL relativa o absoluta, de la misma forma que el elemento
+        &lt;a&gt;contiene los valores del atributo href.
+    </p>
+    <b>Por Ejemplo</b><br>Si tu imagen se llama dinosaur.jpg,
+     y está en el mismo directorio que tu página HTML, deberás incrustar la imagen de la siguiente manera:
+     <br>
+     <h4 style="border:2px solid  rgb(255, 234, 81);">&lt;img src="dinosaur.jpg"&gt;</h4>
+    
+     <p>Si la imagen estaba en el subdirectorio images, que estaba en el mismo directorio que la página HTML 
+    (lo que Google recomienda con fines de indización y posicionamiento en buscadores SEO),
+     entonces deberías incrustar la imagen así:</p>
+     <h4 style="border:2px solid  rgb(255, 234, 81);">&lt;img src="imagenes/dinosaur.jpg"&gt;</h4>
+     
+     <p>Puedes incrustar la imagen usando la URL absoluta, por ejemplo:</p>
+     <h4 style="border:2px solid   rgb(255, 234, 81);">&lt;img src="https://www.example.com/images/dinosaur.jpg"&gt;</h4>
+    
+     <b><h2>Texto Alternativo</h2></b>
+     <p>El próximo atributo que veremos es alt. Su valor debe ser una descripción textual de la imagen para
+    usarla en situaciones en que la imagen no puede ser vista/mostrada o tarde demasiado en mostrarse
+     por una conexión lenta a internet.Por ejemplo, nuestro código anterior podría modificarse así:
+     </p>
+     <h4 style="border:2px solid  rgb(255, 234, 81);">&lt;img src="images/dinosaur.jpg"
+     alt="La cabeza y el torso de un esqueleto de dinosaurio;br
+     tiene una cabeza grande con dientes largos y afilados"></h4>
+     <p>La forma más fácil de probar el texto alt es escribir mal el nombre de archivo. Si, por ejemplo,
+     escribimos el nombre archivo de nuestra imagen como dinosooooor.jpg,
+      el navegador no podrá mostrar la imagen, en su lugar mostrará el texto alternativo:</p>
+    
+    <img src="alt.png" alt="ejemplo de texto Alternativo" style="width:500px;height:500px;">
+    <div style="color: rgb(255, 255, 255);">
+  <h2>Ejemplo de imagen</h2>
+  <h4 style="border:2px solid  rgb(255, 234, 81);">&lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;</h4>
+  <img src="../img/saa.png" alt="Salinas">
+  <h2>Ejemplo con URL</h2>
+  <h4 style="border:2px solid  rgb(255, 234, 81);">&lt;img src="url" alt="alternatetext"&gt;</h4>
+  </div>
+  
+  <br>
+    <br>
+    <br>
+
+</html>

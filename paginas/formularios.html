@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content=" wid=decive-width, initial-scale=1">
+<body style="background-color: rgb(248, 255, 199);">
+  <center><h1 style="color: rgb(0, 0, 0);">MANUAL HTML</h1></center>
+</div>
+<header>
+  <nav><center>
+  <div style="background-color: rgb(12, 1, 140);">
+    <br>
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/ftxt.html">Formato de texto</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/imagen.html">Imagenes</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/tablas.html">Tablas</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../index.html">HOME</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/listas.html">Listas</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/formularios.html">Formularios</a>&nbsp;&nbsp;
+    <a style="text-decoration: none; color:#fefffe;"href="../paginas/media.html">Media</a>&nbsp;&nbsp;
+    <br><br><hr>
+
+</div>
+</body>
+<center><h1 style="color:rgb(0, 0, 0);">FORMULARIOS HTML</h1></center>
+<H2 style="color:rgb(0, 0, 0);"><p style="text-align: center;">Que son los formularios?</H2>
+    Los formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o aplicación.
+    Los formularios permiten a los usuarios la introducción de datos,
+    que generalmente se envían a un servidor web para su procesamiento y almacenamiento 
+    (consulta Enviar los datos de un formulario más adelante en el módulo),
+    o se usan en el lado del cliente para provocar de alguna manera una actualización inmediata de la interfaz
+    (por ejemplo, se añade otro elemento a una lista, o se muestra u oculta una función de interfaz de usuario).</p>
+    <p>El HTML de un formulario web está compuesto por uno o más controles de formulario (a veces llamados widgets),
+    además de algunos elementos adicionales que ayudan a estructurar el formulario general; 
+    a menudo se los conoce como formularios HTML. Los controles pueden ser campos de texto de una o varias líneas, 
+    cajas desplegables, botones, casillas de verificación o botones de opción,
+     y se crean principalmente con el elemento &lt;input&gt;, aunque hay algunos otros elementos que también hay que conocer.</p>
+
+<h2>El elemento &lt;form&gt;</h2>
+   <p>Todos los formularios comienzan con un elemento  &lt;form &gt;, como este:</p>
+   <p><img src="../img/1.jpg"width="400" height="100" align="left"/></p>
+   <br><br><br><br><br><br>
+   <p>ㅤㅤㅤEste elemento define formalmente un formulario. Es un elemento contenedor, como un elemento &lt;section&gt; o &lt;footer&gt;,
+     pero específico para contener formularios; ㅤㅤㅤtambién admite algunos atributos específicos 
+     para la configuración de la forma en que se comporta el formulario. Todos sus atributos son opcionales, 
+     pero es una ㅤㅤㅤpráctica estándar establecer siempre al menos los atributos action y method:</p>
+     <br>
+     <p><li>El atributo action define la ubicación (URL) donde se envían los datos que el formulario ha recopilado cuando se validan.</li></p>
+     <p><li>El atributo method define con qué método HTTP se envían los datos (generalmente get o post).</li></p>
+<h2>Los elementos &lt;label&gt;, &lt;input&gt; y &lt;textarea&gt;&lt;textarea&gt;</h2>
+     <p>Nuestro formulario de contacto no es complejo: la parte para la entrada de datos contiene tres campos de texto, 
+      cada uno con su elemento &lt;label&gt; correspondiente:</p>
+    <p><li>El campo de entrada para el nombre es un campo de texto de una sola línea.</li></p>
+    <p><li>El campo de entrada para el correo electrónico es una entrada de datos de tipo correo electrónico: 
+      un campo de texto de una sola línea que acepta solo direcciones de correo electrónico.</li></p>
+    <p><li>El campo de entrada para el mensaje es &lt;textarea&gt;; un campo de texto multilínea.</li></p>
+    <p>En términos de código HTML, para implementar estos controles de formulario necesitamos algo como lo siguiente:</p>
+    <p><img src="../img/22.jpg"width="400" height="120" align="left"/></p>
+    <br><br><br><br><br><br><br><br>
+    <form>
+      <label for="fname">Nombre</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Apellido:</label><br>
+      <input type="text" id="lname" name="lname">
+    </form>
+    <h2>Casilla de verificacion</h2>
+    <p><img src="../img/8.jpg"width="400" height="120" align="left"/></p>
+    <br><br><br><br><br><br><br><br>
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> Tengo una bicicleta</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> Tengo un carro</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> Tengo un bote</label>
+    </form>
+  <br>
+
+  </body>
+
+</html>
